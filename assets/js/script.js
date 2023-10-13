@@ -30,8 +30,8 @@ $(document).ready(function () {
         var timeNow = dayjs().hour();
         console.log("TIME NOW: ", typeof timeNow)
 
-        // loop over time blocks
-        //document.createElement("button") // Vanila JS
+        // loop over time blocks  //help in tutoring session
+        //document.createElement("button") // Vanilla JS
         //$('<button>') // jQuery
         $(".time-block").each(function () {
             //var blockTime = parseInt($(this).attr("id").split("hour")[1]); // returning -17
@@ -61,7 +61,7 @@ $(document).ready(function () {
         })
     }
 
-    // Get item from local storage if any
+    // Get item from local storage if any for filling out schedule
     $("#hour-8 .description").val(localStorage.getItem("hour-8"));
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
+// the code doesn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
     displayTime();

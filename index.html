@@ -11,10 +11,11 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href=".\assets\css\reset.css" />
   <link rel="stylesheet" href=".\assets\css\style.css" />
-  <title>Work Day Scheduler-Challenge 5: Third-Party APIs</title>
+  <title>Challenge 5--Third-Party APIs Work Day Scheduler</title>
 </head>
 
 <body>
+  <!-- help from a classmate to get the current time and date to work -->
   <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -28,8 +29,9 @@
 
   <div class="container-lg px-5">
     
-    <!-- removed hard coded past, present, future in id class attributes -->
+    <!-- removed hard coded past, present, future in id class attributes. It did not work well -->
     <!-- Added a div for each time slot 9am to 5pm -->
+    <!-- help from classmate to make the save button work -->
 
     <div id="hour-9" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
@@ -121,14 +123,9 @@
 
 </html>
 
-<!--changed aria to area-->
+<!--changed aria to area-->  <!--help from tutor-->
 
 <!-- Use class for "past", "present", and "future" to apply styles to the
-        time-block divs accordingly. The javascript will need to do this by
-        adding/removing these classes on each div by comparing the hour in the
-        id to the current hour. The html provided below is meant to be an example
-        demonstrating how the css provided can be leveraged to create the
-        desired layout and colors. The html below should be removed or updated
-        in the finished product. Remember to delete this comment once the
-        code is implemented.
-        -->
+        time-block divs. Javascript adds/removes these classes on each div.
+	Compares id to the current hour. The html provided shows how css creates the
+        desired layout and colors. -->
